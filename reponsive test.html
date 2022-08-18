@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive test</title>
+  </head>
+  <style>
+    body {
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    @media screen and (min-width: 768px) {
+      .SectionA {
+        background-color: red;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .SectionB {
+        background-color: yellow;
+        grid-column-start: 1;
+        grid-row-start: 2;
+      }
+      .SectionC {
+        background-color: orange;
+        grid-column-start: 2;
+        grid-row-start: 2;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .SectionA {
+        background-color: red;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .SectionB {
+        background-color: yellow;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+      }
+      .SectionC {
+        background-color: orange;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+      }
+    }
+  </style>
+  <body>
+    <div class="SectionA">a</div>
+    <div class="SectionB">b</div>
+    <div class="SectionC">c</div>
+  </body>
+</html>

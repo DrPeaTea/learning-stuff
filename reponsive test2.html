@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive test</title>
+  </head>
+  <style>
+    @media only screen and (min-width: 768px) {
+      body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+      .SectionA {
+        background-color: red;
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+      .SectionB {
+        background-color: orange;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+      }
+      .SectionC {
+        background-color: yellow;
+        grid-column-start: 1;
+        grid-row-start: 3;
+      }
+      .SectionD {
+        background-color: green;
+        grid-column-start: 2;
+        grid-row-start: 3;
+      }
+      .SectionE {
+        background-color: blue;
+        grid-column-start: 3;
+        grid-row-start: 3;
+      }
+      .SectionF {
+        background-color: indigo;
+        grid-column-start: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
+      .SectionA {
+        background-color: red;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      .SectionB {
+        background-color: orange;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+      }
+      .SectionC {
+        background-color: yellow;
+        grid-column-start: 1;
+        grid-row-start: 3;
+      }
+      .SectionD {
+        background-color: green;
+        grid-column-start: 2;
+        grid-row-start: 3;
+      }
+      .SectionE {
+        background-color: blue;
+        grid-column-start: 3;
+        grid-row-start: 3;
+      }
+      .SectionF {
+        background-color: indigo;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+      }
+    }
+  </style>
+  <body>
+    <div class="SectionA">a</div>
+    <div class="SectionB">b</div>
+    <div class="SectionC">c</div>
+    <div class="SectionD">d</div>
+    <div class="SectionE">e</div>
+    <div class="SectionF">f</div>
+  </body>
+</html>
